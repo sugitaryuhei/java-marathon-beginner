@@ -15,7 +15,7 @@ public class NameReceiveController {
 	
 	@RequestMapping("/output")
 	public String output(String name,Model model) {
-		model.addAttribute(name);
+		model.addAttribute("name",name);
 		return "outputname";
 	}
 
