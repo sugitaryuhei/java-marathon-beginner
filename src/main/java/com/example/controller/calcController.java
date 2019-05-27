@@ -22,6 +22,8 @@ public class calcController {
 	public String output(String num1,String num2) {
 		int answer = Integer.parseInt(num1) * 
 				     Integer.parseInt(num2);
+		session.setAttribute("num1", num1);
+		session.setAttribute("num2", num2);
 		session.setAttribute("answer", answer);
 		return "outputvalue";
 	}
